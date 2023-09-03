@@ -1,0 +1,3 @@
+<ul>Name: {{ zookeeper.name }}</ul>
+<ul>Birthday: {{ zookeeper.birthday }}</ul>
+<ul>Animal: {% for animal in zookeeper.animals %}{{ animal.name }}{% if not loop.last %}, {% endif %}{% endfor %}</ul>
